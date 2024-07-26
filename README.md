@@ -66,6 +66,9 @@ Le projet a pour but de :
 
 <img width="958" alt="image" src="https://github.com/user-attachments/assets/aa3d0c39-5108-4d85-ae6b-70966fc9c872">
 
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/b07d624e-0632-4565-82cc-36387f3d1522">
+
+
 
 #### Grafana
 ![Grafana](path/to/grafana-screenshot.png)
