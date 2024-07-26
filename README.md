@@ -62,6 +62,11 @@ Le projet a pour but de :
 #### WordPress
 ![WordPress](path/to/wordpress-screenshot.png)
 
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/ce618acf-a879-4d7e-9ae7-c5cfbdc79979">
+
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/aa3d0c39-5108-4d85-ae6b-70966fc9c872">
+
+
 #### Grafana
 ![Grafana](path/to/grafana-screenshot.png)
 
