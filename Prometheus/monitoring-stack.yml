@@ -1,0 +1,81 @@
+version: '3.7'
+
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - /mnt/prometheus:/prometheus
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./alerts-rules.yml:/etc/prometheus/alerts-rules.yml
+    ports:
+      - "9090:9090"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    depends_on:
+      - cadvisor
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    ports:
+      - 8090:8080
+    volumes:
+      - "/:/rootfs"
+      - "/var/run:/var/run"
+      - "/sys:/sys"
+      - "/var/lib/docker/:/var/lib/docker"
+      - "/dev/disk/:/dev/disk"
+    deploy:
+      mode: global
+
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+    environment:
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+      - DS_PROMETHEUS=prometheus
+    volumes:
+      - "/mnt/grafana:/var/lib/grafana"
+      - "./datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml"
+      - "./dashboard.json:/var/lib/grafana/dashboards/dashboard.json"
+      - "./default.yml:/etc/grafana/provisioning/dashboards/default.yml"
+    privileged: true
+    depends_on:
+      - prometheus
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+
+  alertmanager:
+    image: prom/alertmanager
+    ports:
+      - '9093:9093'
+    volumes:
+      - /mnt/alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+
+
+  node_exporter_sc13:
+    image: prom/node-exporter:latest
+    ports:
+      - "9100:9100"
+    deploy:
+      placement:
+        constraints: [node.hostname == sc13]
+
+  node_exporter_sc14:
+    image: prom/node-exporter:latest
+    ports:
+      - "9101:9100"
+    deploy:
+      placement:
+        constraints: [node.hostname == sc14]
+
+  node_exporter_sc15:
+    image: prom/node-exporter:latest
+    ports:
+      - "9102:9100"
+    deploy:
+      placement:
+        constraints: [node.hostname == sc15]
