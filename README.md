@@ -78,3 +78,13 @@ Pour installer ce projet localement, suivez les étapes ci-dessous :
 1. Clonez le dépôt sur votre machine :
    ```bash
    git clone https://github.com/votre-utilisateur/tp-groupe-5-hamara.git
+   
+2. Naviguez dans le répertoire du projet :
+  ```bash
+   cd Tp_Docker_Swarm_Groupe5_Hamara
+
+3. Initialisez le cluster Docker Swarm :
+  ```bash
+   docker swarm init
+
+
