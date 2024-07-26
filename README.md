@@ -65,12 +65,26 @@ Le projet a pour but de :
 #### Grafana
 ![Grafana](path/to/grafana-screenshot.png)
 
+<img width="941" alt="Grafana" src="https://github.com/user-attachments/assets/73140f85-5759-4d81-a9bf-66305455c591">
+
+
 #### Prometheus
 ![Prometheus](path/to/prometheus-screenshot.png)
 
+<img width="890" alt="Prometheus" src="https://github.com/user-attachments/assets/5a3f2dc6-6579-4e46-a010-ea3311181937">
+
+##Alertes
+
+<img width="689" alt="image" src="https://github.com/user-attachments/assets/6fc1f67c-2210-4392-929a-69c28f707a59">
+
+<img width="805" alt="image" src="https://github.com/user-attachments/assets/fda5b7ea-2b83-4baf-a574-9b5f02001a1d">
+
+
 #### cAdvisor
 ![cAdvisor](path/to/cadvisor-screenshot.png)
+
 <img width="942" alt="image" src="https://github.com/user-attachments/assets/ed627d68-a535-4c89-80bb-20fe4cff1dc2">
+
 
 ## Installation
 
