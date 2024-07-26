@@ -70,6 +70,7 @@ Le projet a pour but de :
 
 #### cAdvisor
 ![cAdvisor](path/to/cadvisor-screenshot.png)
+<img width="942" alt="image" src="https://github.com/user-attachments/assets/ed627d68-a535-4c89-80bb-20fe4cff1dc2">
 
 ## Installation
 
