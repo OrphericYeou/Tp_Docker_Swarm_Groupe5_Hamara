@@ -5,8 +5,9 @@
 1. [Introduction](#introduction)
 2. [Projet Réalisé](#projet-réalisé)
 3. [Installation](#installation)
-4. [Contributeurs](#contributeurs)
-5. [Licence](#licence)
+4. [Utilisation](#utilisation)
+5. [Contributeurs](#contributeurs)
+6. [Licence](#licence)
 
 ## Introduction
 
@@ -23,6 +24,7 @@ Le projet a pour but de :
 - Déployer des applications de supervision et de monitoring (Grafana, Prometheus, cAdvisor).
 - Mettre en place GlusterFS pour la sauvegarde et la réplication des données.
 - Utiliser Keepalived pour assurer la haute disponibilité (HA) du cluster.
+- Configurer des alertes sur Discord pour les états critiques des nœuds.
 
 ### Technologies Utilisées
 
@@ -31,6 +33,7 @@ Le projet a pour but de :
 - **Grafana, Prometheus, cAdvisor** : Pour la supervision et le monitoring.
 - **GlusterFS** : Pour la sauvegarde et la réplication des données.
 - **Keepalived** : Pour assurer la haute disponibilité du cluster.
+- **Discord** : Pour les alertes sur les états critiques des nœuds.
 
 ### Architecture
 
@@ -50,6 +53,23 @@ Le projet a pour but de :
 
 5. **Keepalived** :
     - Configuration de Keepalived pour la gestion de l'adresse IP virtuelle, garantissant la haute disponibilité.
+
+6. **Alertes Discord** :
+    - Configuration des alertes pour remonter les différents états critiques des nœuds via Discord.
+
+### Captures d'Écran
+
+#### WordPress
+![WordPress](path/to/wordpress-screenshot.png)
+
+#### Grafana
+![Grafana](path/to/grafana-screenshot.png)
+
+#### Prometheus
+![Prometheus](path/to/prometheus-screenshot.png)
+
+#### cAdvisor
+![cAdvisor](path/to/cadvisor-screenshot.png)
 
 ## Installation
 
