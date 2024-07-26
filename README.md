@@ -3,22 +3,53 @@
 ## Table des matières
 
 1. [Introduction](#introduction)
-2. [Technologies Utilisées](#technologies-utilisées)
+2. [Projet Réalisé](#projet-réalisé)
 3. [Installation](#installation)
-4. [Utilisation](#utilisation)
-5. [Contributeurs](#contributeurs)
-6. [Licence](#licence)
+4. [Contributeurs](#contributeurs)
+5. [Licence](#licence)
 
 ## Introduction
 
-Bienvenue dans le projet "Tp groupe 5 (hamara)". Ce projet a été développé dans le cadre d'un travail pratique de groupe. L'objectif principal est de [décrire ici l'objectif principal du projet].
+Bienvenue dans le projet "Tp groupe 5 (hamara)". Ce projet a été réalisé dans le cadre de notre cours sur les conteneurs et DevOps. L'objectif de ce projet est de mettre en place un cluster Docker utilisant Docker Swarm, avec le déploiement de plusieurs applications pour démontrer la haute disponibilité, la supervision et le monitoring, ainsi que la sauvegarde et la réplication des données.
 
-## Technologies Utilisées
+## Projet Réalisé
 
-Ce projet utilise les technologies suivantes :
-- [Langage de programmation ou framework] : Description de l'utilisation.
-- [Base de données] : Description de l'utilisation.
-- [Outils ou bibliothèques supplémentaires] : Description de l'utilisation.
+### Objectifs
+
+Le projet a pour but de :
+
+- Créer un cluster Docker Swarm.
+- Déployer une application WordPress.
+- Déployer des applications de supervision et de monitoring (Grafana, Prometheus, cAdvisor).
+- Mettre en place GlusterFS pour la sauvegarde et la réplication des données.
+- Utiliser Keepalived pour assurer la haute disponibilité (HA) du cluster.
+
+### Technologies Utilisées
+
+- **Docker Swarm** : Pour la gestion du cluster Docker.
+- **WordPress** : Pour déployer une application web de gestion de contenu.
+- **Grafana, Prometheus, cAdvisor** : Pour la supervision et le monitoring.
+- **GlusterFS** : Pour la sauvegarde et la réplication des données.
+- **Keepalived** : Pour assurer la haute disponibilité du cluster.
+
+### Architecture
+
+1. **Cluster Docker Swarm** :
+    - Un cluster de plusieurs nœuds Docker pour assurer la répartition de la charge et la redondance.
+    
+2. **Stack 1 - WordPress** :
+    - Déploiement de WordPress avec une base de données MySQL.
+
+3. **Stack 2 - Supervision et Monitoring** :
+    - Déploiement de Grafana pour la visualisation.
+    - Déploiement de Prometheus pour la collecte des métriques.
+    - Déploiement de cAdvisor pour la surveillance des conteneurs.
+
+4. **GlusterFS** :
+    - Implémentation de GlusterFS pour la sauvegarde et la réplication des données sur différents nœuds du cluster.
+
+5. **Keepalived** :
+    - Configuration de Keepalived pour la gestion de l'adresse IP virtuelle, garantissant la haute disponibilité.
 
 ## Installation
 
