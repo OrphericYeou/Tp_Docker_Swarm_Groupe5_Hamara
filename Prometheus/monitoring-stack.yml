@@ -61,21 +61,4 @@ services:
     ports:
       - "9100:9100"
     deploy:
-      placement:
-        constraints: [node.hostname == sc13]
-
-  node_exporter_sc14:
-    image: prom/node-exporter:latest
-    ports:
-      - "9101:9100"
-    deploy:
-      placement:
-        constraints: [node.hostname == sc14]
-
-  node_exporter_sc15:
-    image: prom/node-exporter:latest
-    ports:
-      - "9102:9100"
-    deploy:
-      placement:
-        constraints: [node.hostname == sc15]
+      mode: global
