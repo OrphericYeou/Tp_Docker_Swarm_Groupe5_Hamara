@@ -60,7 +60,7 @@ Le projet a pour but de :
 ### Captures d'Écran
 
 #### WordPress
-![WordPress](path/to/wordpress-screenshot.png)
+![WordPress]
 
 <img width="956" alt="image" src="https://github.com/user-attachments/assets/ce618acf-a879-4d7e-9ae7-c5cfbdc79979">
 
@@ -71,13 +71,13 @@ Le projet a pour but de :
 
 
 #### Grafana
-![Grafana](path/to/grafana-screenshot.png)
+![Grafana]
 
 <img width="941" alt="Grafana" src="https://github.com/user-attachments/assets/73140f85-5759-4d81-a9bf-66305455c591">
 
 
 #### Prometheus
-![Prometheus](path/to/prometheus-screenshot.png)
+![Prometheus]
 
 <img width="890" alt="Prometheus" src="https://github.com/user-attachments/assets/5a3f2dc6-6579-4e46-a010-ea3311181937">
 
@@ -89,7 +89,7 @@ Le projet a pour but de :
 
 
 #### cAdvisor
-![cAdvisor](path/to/cadvisor-screenshot.png)
+![cAdvisor]
 
 <img width="942" alt="image" src="https://github.com/user-attachments/assets/ed627d68-a535-4c89-80bb-20fe4cff1dc2">
 
@@ -105,9 +105,12 @@ Pour installer ce projet localement, suivez les étapes ci-dessous :
 2. Naviguez dans le répertoire du projet :
   ```bash
    cd Tp_Docker_Swarm_Groupe5_Hamara
+  ```
+
 
 3. Initialisez le cluster Docker Swarm :
   ```bash
    docker swarm init
+  ```
 
 
