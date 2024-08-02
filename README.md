@@ -110,7 +110,12 @@ Pour installer ce projet localement, suivez les étapes ci-dessous :
 
 3. Initialisez le cluster Docker Swarm :
   ```bash
-   docker swarm init
+   docker swarm init --data-path-port=7789
+  ```
+
+4. Joindre le cluster en tant que master :
+  ```bash
+   docker swarm join --token token-id
   ```
 
 
