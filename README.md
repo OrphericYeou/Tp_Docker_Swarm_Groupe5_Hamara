@@ -118,4 +118,22 @@ Pour installer ce projet localement, suivez les étapes ci-dessous :
    docker swarm join --token token-id
   ```
 
+5. Déployer le stack Wordpress :
+  ```bash
+   docker stack deploy -c wordpress-stack.yml wordpress_stack
+  ```
+
+6. Déployer le stack Monitoring (Prometheus + Grafana + AlertManager) :
+  ```bash
+   docker stack deploy -c monitoring-stack.yml monitoring_stack
+  ```
+
+7. Verifier le deploiement :
+  ```bash
+   docker stack services monitoring_stack
+  ```
+ou 
+  ```bash
+   docker stack ps monitoring_stack
+  ```
 
